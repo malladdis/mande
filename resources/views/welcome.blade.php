@@ -9,18 +9,11 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <script src="{{asset('js/jquery.min.js')}}"></script>
-        <script src="{{asset('js/angular.min.js')}}"></script>
-        <script src="{{asset('js/myapp.js')}}"></script>
     </head>
 
 
 
-    <body ng-app="app">
-        <div ng-controller="maincontroller">
-           <ul>
-                <li style="color: #212121;" ng-repeat="x in f"><% f[0]['question']['en'] %></li>
-           </ul>
-        </div>
+    <body>
+        hello world
     </body>
 </html>
