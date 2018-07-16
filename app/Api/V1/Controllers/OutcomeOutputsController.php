@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\SubOutputList;
+use App\OutcomeOutputs;
 use Illuminate\Http\Request;
 
-class SubOutputListController extends Controller
+class OutcomeOutputsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class SubOutputListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\SubOutputList  $subOutputList
+     * @param  \App\OutcomeOutputs  $outcomeOutputs
      * @return \Illuminate\Http\Response
      */
-    public function show(SubOutputList $subOutputList)
+    public function show(OutcomeOutputs $outcomeOutputs)
     {
         //
     }
@@ -52,10 +52,10 @@ class SubOutputListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\SubOutputList  $subOutputList
+     * @param  \App\OutcomeOutputs  $outcomeOutputs
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubOutputList $subOutputList)
+    public function edit(OutcomeOutputs $outcomeOutputs)
     {
         //
     }
@@ -64,10 +64,10 @@ class SubOutputListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\SubOutputList  $subOutputList
+     * @param  \App\OutcomeOutputs  $outcomeOutputs
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubOutputList $subOutputList)
+    public function update(Request $request, OutcomeOutputs $outcomeOutputs)
     {
         //
     }
@@ -75,10 +75,10 @@ class SubOutputListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\SubOutputList  $subOutputList
+     * @param  \App\OutcomeOutputs  $outcomeOutputs
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubOutputList $subOutputList)
+    public function destroy(OutcomeOutputs $outcomeOutputs)
     {
         //
     }

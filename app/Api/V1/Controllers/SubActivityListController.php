@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
 use App\SubActivityList;
 use Illuminate\Http\Request;

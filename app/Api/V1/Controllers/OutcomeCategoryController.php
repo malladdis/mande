@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\Input;
+use App\OutcomeCategory;
 use Illuminate\Http\Request;
 
-class InputController extends Controller
+class OutcomeCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class InputController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Input  $input
+     * @param  \App\OutcomeCategory  $outcomeCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(Input $input)
+    public function show(OutcomeCategory $outcomeCategory)
     {
         //
     }
@@ -52,10 +52,10 @@ class InputController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Input  $input
+     * @param  \App\OutcomeCategory  $outcomeCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(Input $input)
+    public function edit(OutcomeCategory $outcomeCategory)
     {
         //
     }
@@ -64,10 +64,10 @@ class InputController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Input  $input
+     * @param  \App\OutcomeCategory  $outcomeCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Input $input)
+    public function update(Request $request, OutcomeCategory $outcomeCategory)
     {
         //
     }
@@ -75,10 +75,10 @@ class InputController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Input  $input
+     * @param  \App\OutcomeCategory  $outcomeCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Input $input)
+    public function destroy(OutcomeCategory $outcomeCategory)
     {
         //
     }

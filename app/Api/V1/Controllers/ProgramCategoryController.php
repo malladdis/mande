@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\SubInputList;
+use App\ProgramCategory;
 use Illuminate\Http\Request;
 
-class SubInputListController extends Controller
+class ProgramCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class SubInputListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\SubInputList  $subInputList
+     * @param  \App\ProgramCategory  $programCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(SubInputList $subInputList)
+    public function show(ProgramCategory $programCategory)
     {
         //
     }
@@ -52,10 +52,10 @@ class SubInputListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\SubInputList  $subInputList
+     * @param  \App\ProgramCategory  $programCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubInputList $subInputList)
+    public function edit(ProgramCategory $programCategory)
     {
         //
     }
@@ -64,10 +64,10 @@ class SubInputListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\SubInputList  $subInputList
+     * @param  \App\ProgramCategory  $programCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubInputList $subInputList)
+    public function update(Request $request, ProgramCategory $programCategory)
     {
         //
     }
@@ -75,10 +75,10 @@ class SubInputListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\SubInputList  $subInputList
+     * @param  \App\ProgramCategory  $programCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubInputList $subInputList)
+    public function destroy(ProgramCategory $programCategory)
     {
         //
     }

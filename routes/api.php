@@ -17,6 +17,9 @@ $api->version('v1', function (Router $api) {
         $api->post('refresh', 'App\\Api\\V1\\Controllers\\RefreshController@refresh');
         $api->get('me', 'App\\Api\\V1\\Controllers\\UserController@me');
     });
+    $api->get('activities', 'App\\Api\\V1\\Controllers\\ActivityController@index');
+    $api->get('activity/{id}','App\\Api\\V1\\Controllers\\ActivityController@show');
+    $api->get('inputs','App\\Api\\V1\\Controllers\\InputController@index');
     $api->group(['middleware' => 'jwt.auth'], function(Router $api) {
         $api->get('protected', function() {
             return response()->json([

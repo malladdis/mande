@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\Outcome;
+use App\Project;
 use Illuminate\Http\Request;
 
-class OutcomeController extends Controller
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OutcomeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Outcome  $outcome
+     * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(Outcome $outcome)
+    public function show(Project $project)
     {
         //
     }
@@ -52,10 +52,10 @@ class OutcomeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Outcome  $outcome
+     * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(Outcome $outcome)
+    public function edit(Project $project)
     {
         //
     }
@@ -64,10 +64,10 @@ class OutcomeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Outcome  $outcome
+     * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Outcome $outcome)
+    public function update(Request $request, Project $project)
     {
         //
     }
@@ -75,10 +75,10 @@ class OutcomeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Outcome  $outcome
+     * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Outcome $outcome)
+    public function destroy(Project $project)
     {
         //
     }

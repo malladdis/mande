@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\ProjectDetail;
+use App\Activity;
+use App\Http\Resources\ActivityResource;
+use Illuminate\Foundation\Testing\HttpException;
 use Illuminate\Http\Request;
 
-class ProjectDetailController extends Controller
+class ActivityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +16,8 @@ class ProjectDetailController extends Controller
      */
     public function index()
     {
-        //
+        $activities = ActivityResource::collection(Activity::all());
+        return response()->json($activities);
     }
 
     /**
@@ -35,27 +38,35 @@ class ProjectDetailController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $activity =  new Activity();
+        $activity->name = $request->name;
+        $activity->description = $request->description;
+        $activity->save();
+        $message = 'success';
+        if ($activity){
+            return response()->json($message,200);
+        }
+        return response()->json(new HttpException(), 500);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\ProjectDetail  $projectDetail
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function show(ProjectDetail $projectDetail)
+    public function show($id)
     {
-        //
+        return response()->json(new ActivityResource(Activity::find($id)));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ProjectDetail  $projectDetail
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProjectDetail $projectDetail)
+    public function edit(Activity $activity)
     {
         //
     }
@@ -64,10 +75,10 @@ class ProjectDetailController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ProjectDetail  $projectDetail
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ProjectDetail $projectDetail)
+    public function update(Request $request, Activity $activity)
     {
         //
     }
@@ -75,10 +86,10 @@ class ProjectDetailController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ProjectDetail  $projectDetail
+     * @param  \App\Activity  $activity
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProjectDetail $projectDetail)
+    public function destroy(Activity $activity)
     {
         //
     }

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\OutputCategory;
+use App\Http\Resources\InputListResource;
+use App\InputList;
 use Illuminate\Http\Request;
 
-class OutputCategoryController extends Controller
+class InputListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,8 @@ class OutputCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $input_lists = InputListResource::collection(InputList::all());
+        return response()->json($input_lists);
     }
 
     /**
@@ -41,10 +43,10 @@ class OutputCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\OutputCategory  $outputCategory
+     * @param  \App\InputList  $inputList
      * @return \Illuminate\Http\Response
      */
-    public function show(OutputCategory $outputCategory)
+    public function show(InputList $inputList)
     {
         //
     }
@@ -52,10 +54,10 @@ class OutputCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\OutputCategory  $outputCategory
+     * @param  \App\InputList  $inputList
      * @return \Illuminate\Http\Response
      */
-    public function edit(OutputCategory $outputCategory)
+    public function edit(InputList $inputList)
     {
         //
     }
@@ -64,10 +66,10 @@ class OutputCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\OutputCategory  $outputCategory
+     * @param  \App\InputList  $inputList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OutputCategory $outputCategory)
+    public function update(Request $request, InputList $inputList)
     {
         //
     }
@@ -75,10 +77,10 @@ class OutputCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\OutputCategory  $outputCategory
+     * @param  \App\InputList  $inputList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OutputCategory $outputCategory)
+    public function destroy(InputList $inputList)
     {
         //
     }

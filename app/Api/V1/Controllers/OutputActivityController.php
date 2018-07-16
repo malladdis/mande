@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\ActivityList;
+use App\OutputActivity;
 use Illuminate\Http\Request;
 
-class ActivityListController extends Controller
+class OutputActivityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ActivityListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ActivityList  $activityList
+     * @param  \App\OutputActivity  $outputActivity
      * @return \Illuminate\Http\Response
      */
-    public function show(ActivityList $activityList)
+    public function show(OutputActivity $outputActivity)
     {
         //
     }
@@ -52,10 +52,10 @@ class ActivityListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ActivityList  $activityList
+     * @param  \App\OutputActivity  $outputActivity
      * @return \Illuminate\Http\Response
      */
-    public function edit(ActivityList $activityList)
+    public function edit(OutputActivity $outputActivity)
     {
         //
     }
@@ -64,10 +64,10 @@ class ActivityListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ActivityList  $activityList
+     * @param  \App\OutputActivity  $outputActivity
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ActivityList $activityList)
+    public function update(Request $request, OutputActivity $outputActivity)
     {
         //
     }
@@ -75,10 +75,10 @@ class ActivityListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ActivityList  $activityList
+     * @param  \App\OutputActivity  $outputActivity
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ActivityList $activityList)
+    public function destroy(OutputActivity $outputActivity)
     {
         //
     }

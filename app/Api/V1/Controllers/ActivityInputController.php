@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\Activity;
+use App\ActivityInput;
 use Illuminate\Http\Request;
 
-class ActivityController extends Controller
+class ActivityInputController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ActivityController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Activity  $activity
+     * @param  \App\ActivityInput  $activityInput
      * @return \Illuminate\Http\Response
      */
-    public function show(Activity $activity)
+    public function show(ActivityInput $activityInput)
     {
         //
     }
@@ -52,10 +52,10 @@ class ActivityController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Activity  $activity
+     * @param  \App\ActivityInput  $activityInput
      * @return \Illuminate\Http\Response
      */
-    public function edit(Activity $activity)
+    public function edit(ActivityInput $activityInput)
     {
         //
     }
@@ -64,10 +64,10 @@ class ActivityController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Activity  $activity
+     * @param  \App\ActivityInput  $activityInput
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Activity $activity)
+    public function update(Request $request, ActivityInput $activityInput)
     {
         //
     }
@@ -75,10 +75,10 @@ class ActivityController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Activity  $activity
+     * @param  \App\ActivityInput  $activityInput
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Activity $activity)
+    public function destroy(ActivityInput $activityInput)
     {
         //
     }

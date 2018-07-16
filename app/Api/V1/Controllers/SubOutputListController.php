@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\OutcomeList;
+use App\SubOutputList;
 use Illuminate\Http\Request;
 
-class OutcomeListController extends Controller
+class SubOutputListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OutcomeListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\OutcomeList  $outcomeList
+     * @param  \App\SubOutputList  $subOutputList
      * @return \Illuminate\Http\Response
      */
-    public function show(OutcomeList $outcomeList)
+    public function show(SubOutputList $subOutputList)
     {
         //
     }
@@ -52,10 +52,10 @@ class OutcomeListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\OutcomeList  $outcomeList
+     * @param  \App\SubOutputList  $subOutputList
      * @return \Illuminate\Http\Response
      */
-    public function edit(OutcomeList $outcomeList)
+    public function edit(SubOutputList $subOutputList)
     {
         //
     }
@@ -64,10 +64,10 @@ class OutcomeListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\OutcomeList  $outcomeList
+     * @param  \App\SubOutputList  $subOutputList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OutcomeList $outcomeList)
+    public function update(Request $request, SubOutputList $subOutputList)
     {
         //
     }
@@ -75,10 +75,10 @@ class OutcomeListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\OutcomeList  $outcomeList
+     * @param  \App\SubOutputList  $subOutputList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OutcomeList $outcomeList)
+    public function destroy(SubOutputList $subOutputList)
     {
         //
     }

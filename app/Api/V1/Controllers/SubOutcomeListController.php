@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\ProgramDetail;
+use App\SubOutcomeList;
 use Illuminate\Http\Request;
 
-class ProgramDetailController extends Controller
+class SubOutcomeListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ProgramDetailController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ProgramDetail  $programDetail
+     * @param  \App\SubOutcomeList  $subOutcomeList
      * @return \Illuminate\Http\Response
      */
-    public function show(ProgramDetail $programDetail)
+    public function show(SubOutcomeList $subOutcomeList)
     {
         //
     }
@@ -52,10 +52,10 @@ class ProgramDetailController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ProgramDetail  $programDetail
+     * @param  \App\SubOutcomeList  $subOutcomeList
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProgramDetail $programDetail)
+    public function edit(SubOutcomeList $subOutcomeList)
     {
         //
     }
@@ -64,10 +64,10 @@ class ProgramDetailController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ProgramDetail  $programDetail
+     * @param  \App\SubOutcomeList  $subOutcomeList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ProgramDetail $programDetail)
+    public function update(Request $request, SubOutcomeList $subOutcomeList)
     {
         //
     }
@@ -75,10 +75,10 @@ class ProgramDetailController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ProgramDetail  $programDetail
+     * @param  \App\SubOutcomeList  $subOutcomeList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProgramDetail $programDetail)
+    public function destroy(SubOutcomeList $subOutcomeList)
     {
         //
     }

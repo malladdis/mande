@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\OutputActivity;
+use App\OutputList;
 use Illuminate\Http\Request;
 
-class OutputActivityController extends Controller
+class OutputListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OutputActivityController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\OutputActivity  $outputActivity
+     * @param  \App\OutputList  $outputList
      * @return \Illuminate\Http\Response
      */
-    public function show(OutputActivity $outputActivity)
+    public function show(OutputList $outputList)
     {
         //
     }
@@ -52,10 +52,10 @@ class OutputActivityController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\OutputActivity  $outputActivity
+     * @param  \App\OutputList  $outputList
      * @return \Illuminate\Http\Response
      */
-    public function edit(OutputActivity $outputActivity)
+    public function edit(OutputList $outputList)
     {
         //
     }
@@ -64,10 +64,10 @@ class OutputActivityController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\OutputActivity  $outputActivity
+     * @param  \App\OutputList  $outputList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OutputActivity $outputActivity)
+    public function update(Request $request, OutputList $outputList)
     {
         //
     }
@@ -75,10 +75,10 @@ class OutputActivityController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\OutputActivity  $outputActivity
+     * @param  \App\OutputList  $outputList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OutputActivity $outputActivity)
+    public function destroy(OutputList $outputList)
     {
         //
     }

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\OutcomeOutputs;
+use App\SubInputList;
 use Illuminate\Http\Request;
 
-class OutcomeOutputsController extends Controller
+class SubInputListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OutcomeOutputsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\OutcomeOutputs  $outcomeOutputs
+     * @param  \App\SubInputList  $subInputList
      * @return \Illuminate\Http\Response
      */
-    public function show(OutcomeOutputs $outcomeOutputs)
+    public function show(SubInputList $subInputList)
     {
         //
     }
@@ -52,10 +52,10 @@ class OutcomeOutputsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\OutcomeOutputs  $outcomeOutputs
+     * @param  \App\SubInputList  $subInputList
      * @return \Illuminate\Http\Response
      */
-    public function edit(OutcomeOutputs $outcomeOutputs)
+    public function edit(SubInputList $subInputList)
     {
         //
     }
@@ -64,10 +64,10 @@ class OutcomeOutputsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\OutcomeOutputs  $outcomeOutputs
+     * @param  \App\SubInputList  $subInputList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OutcomeOutputs $outcomeOutputs)
+    public function update(Request $request, SubInputList $subInputList)
     {
         //
     }
@@ -75,10 +75,10 @@ class OutcomeOutputsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\OutcomeOutputs  $outcomeOutputs
+     * @param  \App\SubInputList  $subInputList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OutcomeOutputs $outcomeOutputs)
+    public function destroy(SubInputList $subInputList)
     {
         //
     }

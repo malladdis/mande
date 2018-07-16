@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\ActivityInput;
+use App\ProjectCategory;
 use Illuminate\Http\Request;
 
-class ActivityInputController extends Controller
+class ProjectCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ActivityInputController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ActivityInput  $activityInput
+     * @param  \App\ProjectCategory  $projectCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(ActivityInput $activityInput)
+    public function show(ProjectCategory $projectCategory)
     {
         //
     }
@@ -52,10 +52,10 @@ class ActivityInputController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ActivityInput  $activityInput
+     * @param  \App\ProjectCategory  $projectCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(ActivityInput $activityInput)
+    public function edit(ProjectCategory $projectCategory)
     {
         //
     }
@@ -64,10 +64,10 @@ class ActivityInputController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ActivityInput  $activityInput
+     * @param  \App\ProjectCategory  $projectCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ActivityInput $activityInput)
+    public function update(Request $request, ProjectCategory $projectCategory)
     {
         //
     }
@@ -75,10 +75,10 @@ class ActivityInputController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ActivityInput  $activityInput
+     * @param  \App\ProjectCategory  $projectCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ActivityInput $activityInput)
+    public function destroy(ProjectCategory $projectCategory)
     {
         //
     }

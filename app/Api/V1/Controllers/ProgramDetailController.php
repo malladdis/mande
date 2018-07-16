@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\Output;
+use App\ProgramDetail;
 use Illuminate\Http\Request;
 
-class OutputController extends Controller
+class ProgramDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OutputController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Output  $output
+     * @param  \App\ProgramDetail  $programDetail
      * @return \Illuminate\Http\Response
      */
-    public function show(Output $output)
+    public function show(ProgramDetail $programDetail)
     {
         //
     }
@@ -52,10 +52,10 @@ class OutputController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Output  $output
+     * @param  \App\ProgramDetail  $programDetail
      * @return \Illuminate\Http\Response
      */
-    public function edit(Output $output)
+    public function edit(ProgramDetail $programDetail)
     {
         //
     }
@@ -64,10 +64,10 @@ class OutputController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Output  $output
+     * @param  \App\ProgramDetail  $programDetail
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Output $output)
+    public function update(Request $request, ProgramDetail $programDetail)
     {
         //
     }
@@ -75,10 +75,10 @@ class OutputController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Output  $output
+     * @param  \App\ProgramDetail  $programDetail
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Output $output)
+    public function destroy(ProgramDetail $programDetail)
     {
         //
     }

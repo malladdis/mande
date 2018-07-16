@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\SubOutcomeList;
+use App\OutcomeList;
 use Illuminate\Http\Request;
 
-class SubOutcomeListController extends Controller
+class OutcomeListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class SubOutcomeListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\SubOutcomeList  $subOutcomeList
+     * @param  \App\OutcomeList  $outcomeList
      * @return \Illuminate\Http\Response
      */
-    public function show(SubOutcomeList $subOutcomeList)
+    public function show(OutcomeList $outcomeList)
     {
         //
     }
@@ -52,10 +52,10 @@ class SubOutcomeListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\SubOutcomeList  $subOutcomeList
+     * @param  \App\OutcomeList  $outcomeList
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubOutcomeList $subOutcomeList)
+    public function edit(OutcomeList $outcomeList)
     {
         //
     }
@@ -64,10 +64,10 @@ class SubOutcomeListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\SubOutcomeList  $subOutcomeList
+     * @param  \App\OutcomeList  $outcomeList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubOutcomeList $subOutcomeList)
+    public function update(Request $request, OutcomeList $outcomeList)
     {
         //
     }
@@ -75,10 +75,10 @@ class SubOutcomeListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\SubOutcomeList  $subOutcomeList
+     * @param  \App\OutcomeList  $outcomeList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubOutcomeList $subOutcomeList)
+    public function destroy(OutcomeList $outcomeList)
     {
         //
     }

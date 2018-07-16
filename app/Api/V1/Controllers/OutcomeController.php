@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\ProjectCategory;
+use App\Outcome;
 use Illuminate\Http\Request;
 
-class ProjectCategoryController extends Controller
+class OutcomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ProjectCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ProjectCategory  $projectCategory
+     * @param  \App\Outcome  $outcome
      * @return \Illuminate\Http\Response
      */
-    public function show(ProjectCategory $projectCategory)
+    public function show(Outcome $outcome)
     {
         //
     }
@@ -52,10 +52,10 @@ class ProjectCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ProjectCategory  $projectCategory
+     * @param  \App\Outcome  $outcome
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProjectCategory $projectCategory)
+    public function edit(Outcome $outcome)
     {
         //
     }
@@ -64,10 +64,10 @@ class ProjectCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ProjectCategory  $projectCategory
+     * @param  \App\Outcome  $outcome
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ProjectCategory $projectCategory)
+    public function update(Request $request, Outcome $outcome)
     {
         //
     }
@@ -75,10 +75,10 @@ class ProjectCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ProjectCategory  $projectCategory
+     * @param  \App\Outcome  $outcome
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProjectCategory $projectCategory)
+    public function destroy(Outcome $outcome)
     {
         //
     }

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\OutcomeCategory;
+use App\ProjectDetail;
 use Illuminate\Http\Request;
 
-class OutcomeCategoryController extends Controller
+class ProjectDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OutcomeCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\OutcomeCategory  $outcomeCategory
+     * @param  \App\ProjectDetail  $projectDetail
      * @return \Illuminate\Http\Response
      */
-    public function show(OutcomeCategory $outcomeCategory)
+    public function show(ProjectDetail $projectDetail)
     {
         //
     }
@@ -52,10 +52,10 @@ class OutcomeCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\OutcomeCategory  $outcomeCategory
+     * @param  \App\ProjectDetail  $projectDetail
      * @return \Illuminate\Http\Response
      */
-    public function edit(OutcomeCategory $outcomeCategory)
+    public function edit(ProjectDetail $projectDetail)
     {
         //
     }
@@ -64,10 +64,10 @@ class OutcomeCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\OutcomeCategory  $outcomeCategory
+     * @param  \App\ProjectDetail  $projectDetail
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OutcomeCategory $outcomeCategory)
+    public function update(Request $request, ProjectDetail $projectDetail)
     {
         //
     }
@@ -75,10 +75,10 @@ class OutcomeCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\OutcomeCategory  $outcomeCategory
+     * @param  \App\ProjectDetail  $projectDetail
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OutcomeCategory $outcomeCategory)
+    public function destroy(ProjectDetail $projectDetail)
     {
         //
     }

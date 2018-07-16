@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\InputList;
+use App\Output;
 use Illuminate\Http\Request;
 
-class InputListController extends Controller
+class OutputController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class InputListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\InputList  $inputList
+     * @param  \App\Output  $output
      * @return \Illuminate\Http\Response
      */
-    public function show(InputList $inputList)
+    public function show(Output $output)
     {
         //
     }
@@ -52,10 +52,10 @@ class InputListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\InputList  $inputList
+     * @param  \App\Output  $output
      * @return \Illuminate\Http\Response
      */
-    public function edit(InputList $inputList)
+    public function edit(Output $output)
     {
         //
     }
@@ -64,10 +64,10 @@ class InputListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\InputList  $inputList
+     * @param  \App\Output  $output
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, InputList $inputList)
+    public function update(Request $request, Output $output)
     {
         //
     }
@@ -75,10 +75,10 @@ class InputListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\InputList  $inputList
+     * @param  \App\Output  $output
      * @return \Illuminate\Http\Response
      */
-    public function destroy(InputList $inputList)
+    public function destroy(Output $output)
     {
         //
     }

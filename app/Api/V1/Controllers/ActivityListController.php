@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\OutputList;
+use App\ActivityList;
 use Illuminate\Http\Request;
 
-class OutputListController extends Controller
+class ActivityListController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OutputListController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\OutputList  $outputList
+     * @param  \App\ActivityList  $activityList
      * @return \Illuminate\Http\Response
      */
-    public function show(OutputList $outputList)
+    public function show(ActivityList $activityList)
     {
         //
     }
@@ -52,10 +52,10 @@ class OutputListController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\OutputList  $outputList
+     * @param  \App\ActivityList  $activityList
      * @return \Illuminate\Http\Response
      */
-    public function edit(OutputList $outputList)
+    public function edit(ActivityList $activityList)
     {
         //
     }
@@ -64,10 +64,10 @@ class OutputListController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\OutputList  $outputList
+     * @param  \App\ActivityList  $activityList
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OutputList $outputList)
+    public function update(Request $request, ActivityList $activityList)
     {
         //
     }
@@ -75,10 +75,10 @@ class OutputListController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\OutputList  $outputList
+     * @param  \App\ActivityList  $activityList
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OutputList $outputList)
+    public function destroy(ActivityList $activityList)
     {
         //
     }

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\Program;
+use App\OutputCategory;
 use Illuminate\Http\Request;
 
-class ProgramController extends Controller
+class OutputCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ProgramController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Program  $program
+     * @param  \App\OutputCategory  $outputCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(Program $program)
+    public function show(OutputCategory $outputCategory)
     {
         //
     }
@@ -52,10 +52,10 @@ class ProgramController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Program  $program
+     * @param  \App\OutputCategory  $outputCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(Program $program)
+    public function edit(OutputCategory $outputCategory)
     {
         //
     }
@@ -64,10 +64,10 @@ class ProgramController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Program  $program
+     * @param  \App\OutputCategory  $outputCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Program $program)
+    public function update(Request $request, OutputCategory $outputCategory)
     {
         //
     }
@@ -75,10 +75,10 @@ class ProgramController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Program  $program
+     * @param  \App\OutputCategory  $outputCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Program $program)
+    public function destroy(OutputCategory $outputCategory)
     {
         //
     }

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Api\V1\Controllers;
 
-use App\ProgramCategory;
+use App\Http\Resources\InputResource;
+use App\Input;
 use Illuminate\Http\Request;
 
-class ProgramCategoryController extends Controller
+class InputController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,8 @@ class ProgramCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $inputs = InputResource::collection(Input::all());
+        return response()->json($inputs);
     }
 
     /**
@@ -41,10 +43,10 @@ class ProgramCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\ProgramCategory  $programCategory
+     * @param  \App\Input  $input
      * @return \Illuminate\Http\Response
      */
-    public function show(ProgramCategory $programCategory)
+    public function show(Input $input)
     {
         //
     }
@@ -52,10 +54,10 @@ class ProgramCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ProgramCategory  $programCategory
+     * @param  \App\Input  $input
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProgramCategory $programCategory)
+    public function edit(Input $input)
     {
         //
     }
@@ -64,10 +66,10 @@ class ProgramCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ProgramCategory  $programCategory
+     * @param  \App\Input  $input
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ProgramCategory $programCategory)
+    public function update(Request $request, Input $input)
     {
         //
     }
@@ -75,10 +77,10 @@ class ProgramCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ProgramCategory  $programCategory
+     * @param  \App\Input  $input
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProgramCategory $programCategory)
+    public function destroy(Input $input)
     {
         //
     }
